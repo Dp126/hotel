@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Bayview Hotel</title>
+    <!-- You can include a downloaded version of Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="start.html">Bayview Hotel</a><!-- this is where you set the navigation title -->
+        </div>
+        <div class="collapse navbar-collapse"><!-- collapse allows for this navbar to be used in mobile devices -->
+          <ul class="nav navbar-nav"><!-- this is the list of navigation options in your navbar -->
+            <li class="active"><a href="home.erb">Home</a></li>
+			<li><a href="accomodation.erb">Accomodation</a></li>
+			<li><a href="reserve.erb">Reservations</a></li>
+			<li><a href="about.erb">About Us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <br/><br/><br/>
+    <div class="container">
+      <div class="row">
+       <div class="col-md-4">First column</div>
+       <div class="col-md-4">Second Column</div>
+       <div class="col-md-4">Third Column</div>
+     </div>
+    </div>
+  </body>
+</html>
