@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Welcome to Sea Palace Hotel</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href=" ">Sea Palace Hotel</a><!-- this is where you set the navigation title -->
+        </div>
+        <div class="collapse navbar-collapse"><!-- collapse allows for this navbar to be used in mobile devices -->
+          <ul class="nav navbar-nav"><!-- this is the list of navigation options in your navbar -->
+            <li><a href="home">Home</a></li>
+      <li><a href="accomodation">Accomodation</a></li>
+      <li class="active"><a href="reserve">Reservations</a></li>
+      <li><a href="about">About Us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <br/><br/><br/>
+    <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"><!-- can be less than 12 -->
+          <h1>Reservation</h1>
+          <form method="GET" action="/results">
+            <!-- group labels and inputs together using a form-group div -->
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input type="text" name="name" />
+            </div>
+            <div class="form-group">
+              <label for="number">Contact Number: </label>
+              <input type="tel" name="number" />
+            </div>
+            <div class="form-group">
+              <label for="startdate">Starting Date: </label>
+              <input type="date" name="startdate" />
+              <label for="until">Until: </label>
+              <input type="date" name="until" />
+            </div>
+            <div class="form-group">
+              <label>Select Room:</label>
+              <select name="rooms">
+                <option value="King's Bedroom">King's Bedroom</option>
+                <option value="Queen's Bedroom">Queen's Bedroom</option>
+                <option value="Prince's Bedroom">Prince's Bedroom</option>
+                <option value="Princess' Bedroom">Princess' Bedroom</option>
+                <option value="Ordinary Bedroom">Ordinary Bedroom</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="quantity">No. of Rooms: </label>
+              <input type="number" name="quantity" min="1" max="10" />
+            </div>
+            <input type="submit" value="Reserve!" />
+          </form>
+        </div>
+      </div>
+    <p></p>
+  </div>
+    </div>
+  </body>
+</html>
